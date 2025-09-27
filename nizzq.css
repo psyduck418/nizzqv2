@@ -1072,7 +1072,9 @@ s-cont hr,
 }
 
 .hp-cont {
+    position: relative !Important;
     margin-right: 20% !important;
+    bottom: 2% !important;
 }
 
 .hp-progress {
@@ -1082,19 +1084,23 @@ s-cont hr,
 #bottom-left,
 #bottom-right {
     width: 100vw !important;
-    height: 100vw !important;
+    height: 100vh !important;
     transform: unset !Important;
 }
 
 .desktop-game-interface .state-cont[data-v-775b245c] {
     position: fixed !important;
     width: 500px !important;
-    bottom: 2%;
-    left: unset !important;
+    height: 100vh !important;
+    top: unset !important;
+    bottom: 0 !important;
     left: 37% !important;
+    justify-content: flex-end;
 }
 
 .cont-endurance {
+    position: relative !Important;
+    bottom: 2% !important;
     margin-left: 1.5%;
     background: transparent !important;
 }
@@ -1105,18 +1111,20 @@ s-cont hr,
 }
 
 .weapons-cont:not(.general-content .weapons-cont) {
-    position: fixed;
-    width: 100px;
-    top: 100.5%;
-    left: 5%;
-    margin-top: -100px;
-    margin-left: 252px;
+    position: fixed !important;
+    width: 500px !important;
+    height: 100vh !important;
+    top: unset !important;
+    bottom: 0 !important;
+    left: 37% !important;
+    justify-content: flex-end;
 }
 
-.ammunition {
-    display: inline-block;
+.state-weapon-active {
     position: fixed;
     left: calc(53% + 180px);
+    top: unset !Important;
+    bottom: 1% !important;
 }
 
 .kill-death {
