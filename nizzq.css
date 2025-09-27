@@ -1104,11 +1104,12 @@ s-cont hr,
     background: linear-gradient(to right, #84a1ff, #39ffd4) !important;
 }
 
-.weapons-cont:not(.general-content[data-v-1c23731f] .weapons-cont) {
+.weapons-cont:not(.general-content .weapons-cont) {
     position: fixed;
     width: 100px;
+    top: 100.5%;
     left: 5%;
-    bottom: 0;
+    margin-top: -100px;
     margin-left: 252px;
 }
 
